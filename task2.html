@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Flux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background-image: url('https://t3.ftcdn.net/jpg/05/48/87/08/360_F_548870803_womfmsxtthXmhwlQhdbooje6LNVa10by.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    width: 600px;
+    height: 600px;
+}
+
+.box {
+
+    background-color: #7cfc00; /* Hill-like green color */
+    border-radius: 8px;
+    min-height: 100px;
+    min-width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Ensures the image fits within the box */
+    background-position: center;
+}
+
+/* Hover effect for scaling */
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Optional: Add image styling to ensure images are properly positioned and sized */
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+</style>
+<body>
+    
+    <div class="gallery">
+        <!-- Gallery Boxes with images -->
+        <div class="box" style="background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Desktop-animation-movies-wallpapers-download.jpg');">
+            <!-- You can add an image element inside the box if you prefer -->
+            <!-- <img src="image1.jpg" alt="Image 1"> -->
+        </div>
+        <div class="box" style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/028/794/707/small_2x/cartoon-cute-school-boy-photo.jpg');">
+            <!-- <img src="image2.jpg" alt="Image 2"> -->
+        </div>
+        <div class="box" style="background-image: url('https://img.freepik.com/free-photo/girl-red-dress-stands-field-with-mountains-background_1340-40289.jpg');">
+            <!-- <img src="image3.jpg" alt="Image 3"> -->
+        </div>
+        <div class="box" style="background-image: url('https://img.freepik.com/free-photo/3d-cartoon-back-school_23-2151676703.jpg?semt=ais_hybrid');">
+            <!-- <img src="image4.jpg" alt="Image 4"> -->
+        </div>
+    </div>
+</body>
+</html>

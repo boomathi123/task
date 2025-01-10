@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Grid Layout</title>
+  <style>
+    /* Ensure consistent box-sizing */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images3.alphacoders.com/118/1181423.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #3d0006;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  /* Grid container styling */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 50px; /* Space between grid items */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  /* Grid item styling */
+  .grid-item {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .grid-item img {
+    width: 200px; 
+    height: 200px;
+    display: block;
+  }
+  
+  .grid-item p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #3d0006;
+    color: #e9ecef;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+  
+  
+  </style>
+</head>
+<body>
+  <header class="header">
+    
+    <h1>Welcome to the Grid Gallery</h1>
+  </header>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="https://media.architecturaldigest.com/photos/618036966ba9675f212cc805/3:2/w_2880,h_1920,c_limit/SquidGame_Season1_Episode1_00_44_44_16.jpg" alt="Image 1">
+      <p>level 1</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://www.thetakeout.com/images/aec749c85e1f68e30be34848fb2ca9e1.jpg" alt="Image 2">
+      <p>level 2</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR79m7lTvoo4bnpe_zxOqIXIF5rAPAOA-QWQg&s" alt="Image 3">
+      <p>level 3</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://thedailytexan.com/wp-content/uploads/2021/10/Squid-Game-review-courtesy-Netflix-900x571.jpeg" alt="Image 4">
+      <p>level 4</p>
+    </div>
+    <!-- Add more grid items as needed -->
+  </div>
+  <footer class="footer">
+    <p>@Boomathi</p>
+  </footer>
+</body>
+</html>
